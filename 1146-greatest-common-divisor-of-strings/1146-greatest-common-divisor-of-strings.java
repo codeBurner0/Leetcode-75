@@ -13,3 +13,6 @@ class Solution {
         return gcd(b,a%b);
     }
 }
+
+// 1.find the gcd of the lengths of the strings
+// 2.then return the substring from 0 to the gcd returned  val.
