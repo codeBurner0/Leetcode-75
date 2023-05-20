@@ -10,15 +10,23 @@ class Solution {
                 map.put(nums[i],1);
             }
         }
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]!=0){
-                if(set.contains(map.get(nums[i]))){
+        // for(int i=0;i<nums.length;i++){
+        //     if(nums[i]!=0){
+            //     if(set.contains(map.get(nums[i]))){
+            //     return false;
+            // }else{
+            //     set.add(map.get(nums[i]));
+            // }
+        //     }
+            
+        // }
+
+        for(int val:map.values()){
+            if(set.contains(val)){
                 return false;
             }else{
-                set.add(map.get(nums[i]));
+                set.add(val);
             }
-            }
-            
         }
         return true;
     }
