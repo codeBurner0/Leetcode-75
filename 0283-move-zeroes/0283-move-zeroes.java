@@ -11,3 +11,7 @@ class Solution {
         }
     }
 }
+
+// 1.take two pointers 
+// 2.one tpoint to the  non zero element and second point to zero
+// 3. swap both the pointers  when non zero pointer point non zero element and increase the zero pointer by 1.
