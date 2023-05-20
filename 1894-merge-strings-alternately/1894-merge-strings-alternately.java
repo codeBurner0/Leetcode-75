@@ -34,3 +34,8 @@ class Solution {
     }
     
 }
+
+
+// res+=w1.substring(i)  
+// if i=2 and the length of the string is 10
+// then it add all the remaining string from 2-end in res.
