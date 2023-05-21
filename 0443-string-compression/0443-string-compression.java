@@ -27,4 +27,4 @@ class Solution {
 }
 
 
-// Integer.toString  convert int to string
+// Integer.toString  convert integer to string
