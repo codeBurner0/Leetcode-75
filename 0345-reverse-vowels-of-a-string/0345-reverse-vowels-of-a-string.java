@@ -62,7 +62,7 @@ class Solution {
                 end--;
             }
         }
-        String str=new String(ch);
+        String str=String.valueOf(ch);
         return str;
     }
 }
