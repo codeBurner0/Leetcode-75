@@ -10,18 +10,16 @@ class Solution {
         for(int i=0;i<nums2.length;i++){
             set2.add(nums2[i]);
         }
-        Integer[] arr1 = set1.toArray( new Integer[set1.size()] );
-        Integer[] arr2 = set2.toArray( new Integer[set2.size()] );
-        for(int i=0;i<arr1.length;i++){
-                if(!set2.contains(arr1[i])){
-                res.add(arr1[i]);
+        for(int num1:set1){
+                if(!set2.contains(num1)){
+                res.add(num1);
           }  
         }
         ans.add(new ArrayList<>(res));
         res.clear();
-        for(int i=0;i<arr2.length;i++){
-                if(!set1.contains(arr2[i])){
-                res.add(arr2[i]);
+        for(int num2:set2){
+                if(!set1.contains(num2)){
+                res.add(num2);
           }  
         }
         ans.add(new ArrayList<>(res));
